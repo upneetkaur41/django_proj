@@ -1,0 +1,11 @@
+<div>
+    <h2 style="color:brown;margin-left: 40%;">Add items to Cart</h2>
+    {% for d in Product_Display %}
+       <h2 style="color:rgb(228, 73, 22);margin-top: 30px;"><b>{{d.name}}</b></h2>
+       <h3>{{d.price}}</h3>
+       <h3>{{d.quantity}}</h3>
+       <a href = "/display/{{d.pk}}/add_to_cart">ADD TO CART</a>
+       <!-- <a href = "/blog/{{blog.pk}}/update">Edit</a> || <a href="/blog/{{blog.pk}}/delete">Delete</a>    -->
+       <hr> 
+    {%endfor%}
+</div>

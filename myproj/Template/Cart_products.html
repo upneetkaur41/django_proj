@@ -1,0 +1,8 @@
+<div>
+    <h1 style="color: rgb(187, 132, 239);margin-left: 35%;">~Products added in cart!~</h1>
+    {% for d in name %}
+    <h2><b>{{d.name_of_product}}</b></h2>
+    <!-- <h3>{{d.price}}</h3> -->
+    <a href = "/display/{{d.pk}}/remove">Remove From Cart</a>
+    {%endfor%}
+</div>
